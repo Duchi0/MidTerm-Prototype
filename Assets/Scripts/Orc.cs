@@ -17,6 +17,5 @@ public class Orc : MonoBehaviour
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed);
-        RotationDriveMode.Slerp.CompareTo(player);
     }
 }
